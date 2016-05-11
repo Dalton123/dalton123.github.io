@@ -1,0 +1,84 @@
+/* GENERAL STYLES */
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px; 
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+*,
+*:before,
+*:after  { 
+  box-sizing: inherit; 
+}
+
+/* TAB STYLES */
+.tab-group {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 40em;
+}
+
+.tab {
+  position: relative;
+  width: 100%;
+}
+
+.tab input {
+  position: absolute;
+  left: 0;
+  z-index: -999;  
+}
+
+.tab label {
+  background: #F44336;
+  color: white;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  line-height: 3;
+  margin-bottom: .5em;
+  padding-left: .5em;
+  letter-spacing: 1px;
+  transition: letter-spacing .55s, background .55s;
+}
+
+.tab input:focus + label,
+.tab input:checked + label {
+  background: #1976D2;
+  letter-spacing: 2px;
+}
+
+.tab label:hover {
+  background: #2196F3;
+  letter-spacing: 2px;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  transition:all .35s;
+}
+
+.tab-content p {
+  margin: 1em 0;
+}
+
+.tab input:checked ~ .tab-content {
+  max-height: 6.25em;
+}
