@@ -1,0 +1,75 @@
+/* --------------------------
+Base Styles
+--------------------------- */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.wrapper {
+    background-color: lightblue;
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#bear{
+    animation: radius ease-in-out 2s infinite;
+}
+
+@keyframes radius {
+    /*0% {
+        border-bottom-right-radius: 0%;
+        position: 100px;
+    }
+    50% {
+        border-bottom-right-radius: 20%;
+        position: 100px;
+    }
+    100% {
+        border-bottom-right-radius: 0%;
+        position: 100px;
+    }*/
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+      }
+      60% {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+
+/* --------------------------
+  Main Styles
+--------------------------- */
+
+
+/* --------------------------
+  Media Queries
+--------------------------- */
+
+@media (min-width: 769px) {
+}
+
+@media (min-width: 1025px) {
+}
