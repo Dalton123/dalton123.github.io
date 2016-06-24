@@ -105,6 +105,7 @@ hr:first-of-type::after {
     }
 }
 
+
 /* - - - - - - - - - - - - - - - Large Screen Styles - - - - - - - - - - - - - - - */
 
 @media (min-width:1024px) {
@@ -136,7 +137,8 @@ header {
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
 }
-.logo span{
+
+.logo span {
     color: rgba(255, 160, 0, 1);
     text-transform: uppercase;
     font-weight: 700;
@@ -150,6 +152,7 @@ header {
         color: rgba(255, 255, 255, 1);
     }
 }
+
 @media (min-width:1024px) {
     .logo {
         margin: 0;
@@ -159,9 +162,12 @@ header {
     }
 }
 
+
 /******************************************************************************************************************************************
 CONTACT FORM
 ******************************************************************************************************************************************/
+
+
 /* - - - - - General form styles - - - - - */
 
 fieldset {
@@ -197,6 +203,7 @@ legend {
 
 #zip_code {
     width: 50%;
+    max-width: 250px;
 }
 
 option {
@@ -225,8 +232,13 @@ textarea {
     height: 3.5em;
     transition: .3s;
 }
-
-
+fieldset:last-of-type label {
+    width: 100%;
+    margin: 2% 0 2%;
+}
+#other_topics {
+    width: 100%;
+}
 /* - - - HTML Validation - - - */
 
 input:required:valid,
@@ -354,28 +366,41 @@ input[type="checkbox"]:checked + label:before {
     box-shadow: 0 0 0 0.15em rgba(255, 160, 0, .5);
 }
 
+
 /* - - - - - - - - - - - - - - - Medium Screen Styles - - - - - - - - - - - - - - - */
 
 @media (min-width:768px) {
     label {
-        margin: 2.5% 0 2%;
+        margin: 4% 0 2%;
+        display: inline-block;
+        width: 29%;
+        float: left;
+    }
+    label + input, label + select {
+        display: inline-block;
+        width: 70%;
+        margin: 2% 0;
     }
     .collumn label {
-        margin: 2.5% 0 2%;
+        margin: 1% 0 2%;
     }
 }
+
+
 /* - - - - - - - - - - - - - - - Large Screen Styles - - - - - - - - - - - - - - - */
 
 @media (min-width:1024px) {
     .collumn {
-        width:49%;
+        width: 49%;
         display: inline-block;
-        margin-top:1em;
+        margin-top: 1em;
     }
-    label {
-        margin: 2% 0 1%;
+    input[type="checkbox"] + label,
+    input[type="radio"] + label {
+        margin: 1.5% 0;
     }
 }
+
 
 /******************************************************************************************************************************************
 FOOTER
