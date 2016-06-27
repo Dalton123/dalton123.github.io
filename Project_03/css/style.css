@@ -193,7 +193,7 @@ label {
 }
 
 legend {
-    width: 90%;
+    width: 92%;
     text-align: left;
     display: inline-block;
     font-size: 1.2em;
@@ -232,13 +232,17 @@ textarea {
     height: 3.5em;
     transition: .3s;
 }
+
 fieldset:last-of-type label {
     width: 100%;
     margin: 2% 0 2%;
 }
+
 #other_topics {
     width: 100%;
 }
+
+
 /* - - - HTML Validation - - - */
 
 input:required:valid,
@@ -376,7 +380,8 @@ input[type="checkbox"]:checked + label:before {
         width: 29%;
         float: left;
     }
-    label + input, label + select {
+    label + input,
+    label + select {
         display: inline-block;
         width: 70%;
         margin: 2% 0;
