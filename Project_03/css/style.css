@@ -124,7 +124,7 @@ header {
     width: 100%;
     background: rgba(48, 63, 159, 1);
     margin-bottom: 2em;
-    background-image: url('/img/brickwall_@2Xx.png');
+    background-image: url('../img/brickwall_@2Xx.png');
     background-repeat: repeat;
 }
 
